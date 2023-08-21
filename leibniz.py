@@ -1,7 +1,6 @@
 from decimal import Decimal
 
 def leibniz(terms):
-    pi = Decimal(pi)
 
     total = 0
 
