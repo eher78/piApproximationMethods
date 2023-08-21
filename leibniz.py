@@ -1,0 +1,16 @@
+from decimal import Decimal
+
+def leibniz(terms):
+    pi = Decimal(pi)
+
+    total = 0
+
+    for i in range(terms):
+        leibniz = (-1)**i/(2*i+1)
+        total += leibniz
+
+
+    piApprox = 4*total
+
+    return piApprox
+
