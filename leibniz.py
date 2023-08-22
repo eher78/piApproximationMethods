@@ -1,5 +1,3 @@
-from decimal import Decimal
-
 def leibniz(terms):
 
     total = 0

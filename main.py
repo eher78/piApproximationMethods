@@ -39,12 +39,16 @@ def main():
 
 
 
-
 def monteCarloSimulation():
     option = False
 
     while option == False:
+
         simulationNumber = int(input("Type in the number of observations for this method: "))
+        if simulationNumber < 0:
+            print("Not a valid number, please try again.")
+            monteCarloSimulation()
+
         piApprox = monteCarlo(simulationNumber)
 
         print(f"The actual value of pi is: {pi}")
@@ -63,7 +67,12 @@ def leibnizSimulation():
     option = False
 
     while option == False:
+
         terms = int(input("Type in the number of terms for this method: "))
+        if terms < 0:
+            print("Not a valid number, please try again.")
+            leibnizSimulation()
+
         piApprox = leibniz(terms)
 
         print(f"The actual value of pi is: {pi}")
@@ -82,7 +91,12 @@ def ramanujanSimulation():
     option = False
 
     while option == False:
+
         terms = int(input("Type in the number of terms for this method: "))
+        if terms < 0:
+            print("Not a valid number, please try again.")
+            ramanujanSimulation()
+
         piApprox = ramanujanSato(terms)
 
         print(f"The actual value of pi is: {pi}")
@@ -102,7 +116,12 @@ def riemannSimulation():
     option = False
 
     while option == False:
+
         terms = int(input("Type in the number of terms for this method: "))
+        if terms < 0:
+            print("Not a valid number, please try again.")
+            riemannSimulation()
+
         piApprox = riemann(terms)
 
         print(f"The actual value of pi is: {pi}")
@@ -121,7 +140,12 @@ def allSimulations():
     option = False
 
     while option == False:
+
         terms = int(input("Type in the number of values for all methods: "))
+        if terms < 0:
+            print("Not a valid number, please try again.")
+            allSimulations()
+
         monteCarloApprox = monteCarlo(terms)
         leibnizApprox = leibniz(terms)
         ramanujanSatoApprox = ramanujanSato(terms)
