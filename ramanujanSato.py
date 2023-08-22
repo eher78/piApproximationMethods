@@ -1,9 +1,8 @@
 from decimal import Decimal
-from math import pi, sqrt, factorial
+from math import sqrt, factorial
 
 def ramanujanSato(terms):
     # Limit of Terms is 129!
-    pi = Decimal(pi)
     terms = 100
     sum = 0
 
