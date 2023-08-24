@@ -1,5 +1,4 @@
-# The entire interface for calculating/approximating pi.
-
+# Import Necessary Libraries
 from monteCarlo import monteCarlo
 from leibniz import leibniz
 from ramanujanSato import ramanujanSato
@@ -7,6 +6,7 @@ from riemannSum import riemann
 
 from math import pi
 
+# The main interface function
 def main():
     print("Please select a method to approximate Pi.")
     print("1. Monte Carlo")
@@ -63,6 +63,8 @@ def monteCarloSimulation():
             option = True
             main()
 
+
+
 def leibnizSimulation():
     option = False
 
@@ -86,6 +88,8 @@ def leibnizSimulation():
         else:
             option = True
             main()
+
+
 
 def ramanujanSimulation():
     option = False
@@ -112,6 +116,8 @@ def ramanujanSimulation():
             main()
 
 
+
+
 def riemannSimulation():
     option = False
 
@@ -135,6 +141,8 @@ def riemannSimulation():
         else:
             option = True
             main()
+
+
 
 def allSimulations():
     option = False
@@ -167,6 +175,8 @@ def allSimulations():
             option = True
             main()
 
+
+
 def piValue():
     option = False
     while option == False:
@@ -180,5 +190,5 @@ def piValue():
             option = True
             main()
 
-
+# Runs the entire operation
 main()

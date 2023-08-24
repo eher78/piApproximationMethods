@@ -15,6 +15,8 @@ def ramanujanSato(terms):
 
     total = Decimal(constant * sum)
 
+    # Result of Series is 1/pi. 
+    
     piApprox = Decimal(1/(total))
 
     return piApprox

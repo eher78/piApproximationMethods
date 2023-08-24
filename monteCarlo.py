@@ -1,7 +1,6 @@
 import numpy as np
 
 def monteCarlo(trials):
-
     r = 1
 
     nInside = 0
@@ -23,6 +22,8 @@ def monteCarlo(trials):
         if x**2 + y**2 < r**2:
             nInside += 1
         
-
+    # Monte Carlo Result would be that of (circle area)/(square area)
+    # With r == 1, pi/4. Multiply result by 4 to get pi.
+    
     piApprox = 4*nInside/trials
     return piApprox

@@ -11,5 +11,8 @@ def riemann(N):
 
     midpoint_riemann_sum = np.sum(f(x_midpoint) * dx)
 
+    # Since the riemann sum only takes into account quadrants 1 and 2 for f, 
+    # We have to double the result to get approximation
+    
     piApprox = midpoint_riemann_sum * 2
     return piApprox
